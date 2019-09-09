@@ -1,0 +1,3 @@
+en:
+  site_settings:
+    discourse_topic_raw_excerpt_enabled: "Add excerpt (`excerpt_raw`) to Topic List Serializer"
