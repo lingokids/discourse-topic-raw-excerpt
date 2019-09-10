@@ -9,7 +9,7 @@ enabled_site_setting :discourse_topic_raw_excerpt_enabled
 PLUGIN_NAME ||= "DiscourseTopicRawExcerpt".freeze
 
 after_initialize do
-  add_to_serializer :listable_topic, :excerpt_raw do
+  add_to_serializer :topic_list_item, :excerpt_raw do
     object.excerpt
   end
 end
