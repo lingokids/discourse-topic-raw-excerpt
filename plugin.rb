@@ -13,7 +13,7 @@ after_initialize do
     object.excerpt
   end
 
-  add_to_serializer :post, :excerpt_raw do
-    object.excerpt
+  add_to_serializer :topic_view, :excerpt_raw do
+    object.topic.excerpt
   end
 end
