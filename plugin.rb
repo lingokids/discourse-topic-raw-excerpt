@@ -1,5 +1,5 @@
 # name: Discourse Topic Raw Excerpt
-# about: Add excerpt_raw to Topics list serializer
+# about: Add excerpt_raw to Topics serializers
 # version: 0.1
 # authors: Lingokids
 # url: https://github.com/lingokids
@@ -11,5 +11,9 @@ PLUGIN_NAME ||= "DiscourseTopicRawExcerpt".freeze
 after_initialize do
   add_to_serializer :topic_list_item, :excerpt_raw do
     object.excerpt
+  end
+
+  add_to_serializer :topic_view, :excerpt_raw do
+    object.topic.excerpt
   end
 end

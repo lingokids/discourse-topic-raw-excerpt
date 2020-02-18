@@ -1,6 +1,6 @@
 # Discourse Topic Raw Excerpt
 
-Discourse Topic Raw Excerpt is a plugin to add `excerpt_raw` field to Topics index serializer.
+Discourse Topic Raw Excerpt is a plugin to add `excerpt_raw` field to Topics index/show serializer.
 
 ## Installation
 
